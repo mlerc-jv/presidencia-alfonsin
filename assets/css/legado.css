@@ -1,0 +1,163 @@
+.contenedor-legado{
+    padding: 45px 8%;
+    background: linear-gradient(180deg,#f2f8ff,#ffffff);
+}
+
+.hero-legado{
+    background: linear-gradient(
+        rgba(29,78,137,.85),
+        rgba(45,142,232,.75)
+    ),
+    url("../img/legado-alfonsin.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+
+    padding: 80px 30px;
+    border-radius: 18px;
+
+    margin-bottom: 40px;
+}
+
+.hero-legado h2{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-legado p{
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.6;
+    font-size: 1.15rem;
+}
+
+.frase-legado{
+    background: white;
+
+    border-left: 8px solid #3f9ae5;
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    margin-bottom: 50px;
+
+    box-shadow: 0 5px 18px rgba(29,78,137,.15);
+}
+
+.frase-legado blockquote{
+    text-align: center;
+
+    color: #1d4e89;
+
+    font-size: 2rem;
+
+    font-style: italic;
+}
+
+.bloque-legado{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px;
+
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.invertido .imagen-legado{
+    order: 2;
+}
+
+.invertido .texto-legado{
+    order: 1;
+}
+
+.imagen-legado img{
+    width: 100%;
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 18px rgba(29,78,137,.2);
+
+    transition: .3s;
+}
+
+.imagen-legado img:hover{
+    transform: scale(1.03);
+}
+
+.texto-legado h3{
+    color: #1d4e89;
+
+    margin-bottom: 15px;
+
+    font-size: 1.8rem;
+}
+
+.texto-legado p{
+    line-height: 1.8;
+
+    margin-bottom: 12px;
+
+    color: #2c3e50;
+}
+
+.cierre-legado{
+    margin-top: 60px;
+
+    background: linear-gradient(
+        135deg,
+        #1d4e89,
+        #3f9ae5
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px;
+
+    border-radius: 18px;
+}
+
+.cierre-legado h2{
+    margin-bottom: 15px;
+}
+
+.cierre-legado p{
+    max-width: 800px;
+
+    margin: auto;
+
+    line-height: 1.7;
+}
+
+@media(max-width:768px){
+
+    .bloque-legado{
+        grid-template-columns: 1fr;
+    }
+
+    .invertido .imagen-legado,
+    .invertido .texto-legado{
+        order: initial;
+    }
+
+    .hero-legado h2{
+        font-size: 2.2rem;
+    }
+
+    .frase-legado blockquote{
+        font-size: 1.5rem;
+    }
+
+}
