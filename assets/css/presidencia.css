@@ -1,0 +1,256 @@
+/* =========================
+   RESET GENERAL
+========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   HEADER
+========================= */
+header{
+    background: linear-gradient(180deg, #2d8ee8, #5aaef5, #2d8ee8);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1{
+    font-family: "Georgia", serif;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,.25);
+}
+
+header h2{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.descripcion{
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 1.2rem;
+}
+
+/* decoracion */
+.decoracion{
+    width: 95%;
+    height: 3px;
+    margin: 30px auto;
+    background: white;
+}
+
+/* =========================
+   NAV
+========================= */
+nav{
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 18px;
+    border-bottom: 4px solid #74c9ff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08); }
+nav a{
+    text-decoration: none;
+    color: #1d4e89;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 40px;
+    transition: all .35s ease;
+    position: relative;
+    overflow: hidden;
+}
+nav a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.3);
+    transition: .5s;
+}
+nav a:hover{
+    background: #3f9ae5;
+    color: white;
+
+    transform:
+        translateY(-6px)
+        scale(1.12);
+
+    box-shadow:
+        0 10px 25px rgba(63,154,229,.5);
+}
+nav a:hover::before{
+    left: 100%;
+}
+
+/* =========================
+   BODY (IMPORTANTE: SIN FLEX)
+========================= */
+body{
+    
+    color: #fff;
+}
+
+/* =========================
+   CONTAINER DE CARDS
+========================= */
+.container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    max-width: 1000px;   /* 👈 CLAVE */
+    
+   margin: 60px auto 40px auto;
+}
+
+/* =========================
+   FOCUS CARDS
+========================= */
+.focus-card{
+    position: relative;
+    width: 720px;
+    height: 580px;
+
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+
+    transition: 0.4s ease;
+}
+
+.focus-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    filter: brightness(65%);
+    transition: 0.4s ease;
+}
+
+/* contenido */
+.card-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    z-index: 5;
+    transition: 0.4s ease;
+      background: transparent;
+    backdrop-filter: none;
+    border-radius: 12px;
+}
+
+.card-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    padding: 0 18px;
+    text-align: center;
+    z-index: 5;
+
+    font-family: "Oswald", sans-serif;
+}
+
+/* 🔵 TITULO PRINCIPAL (LABEL) */
+.card-label{
+    font-size: 2rem;      /* 👈 más grande */
+    font-weight: 800;     /* 👈 más grueso */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    text-shadow: 0 3px 12px rgba(0,0,0,0.85);
+
+    transition: 0.3s ease;
+}
+
+/* 🔷 SUBTITULO (INFO) */
+.card-subtitle{
+    font-size: 1.2rem;    /* 👈 ahora sí se lee fuerte */
+    font-weight: 500;     /* 👈 más grueso */
+    line-height: 1.4;
+
+    opacity: 0;
+    transform: translateY(10px);
+
+    color: #e6f2ff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+
+    transition: 0.4s ease;
+}
+
+/* hover individual */
+.focus-card:hover{
+    transform: scale(1.12) translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.6);
+    z-index: 10;
+}
+
+.focus-card:hover img{
+    filter: brightness(100%);
+}
+
+.focus-card:hover .card-label{
+    transform: scale(1.1);
+    letter-spacing: 3px;
+}
+
+.focus-card:hover .card-content{
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+    padding: 18px 20px;
+    border-radius: 14px;
+}
+.focus-card:hover .card-subtitle{
+    opacity: 1;
+    transform: translateY(3px);
+}
+/* blur cuando pasas sobre el container */
+.container:hover .focus-card{
+    filter: blur(3px) brightness(50%);
+    transform: scale(0.95);
+}
+
+.container:hover .focus-card:hover{
+    filter: blur(0) brightness(100%);
+    transform: scale(1.12) translateY(-5px);
+    z-index: 10;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer{
+    background-color: #1d4e89;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+footer p{
+    margin: 5px 0;
+}

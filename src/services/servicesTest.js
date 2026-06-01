@@ -25,14 +25,14 @@ export const preguntas = [
         correcta: "Juicio a las Juntas"
     },
     {
-        pregunta: "¿Qué organismo investigó las desapariciones durante la dictadura?",
-        opciones: ["CONADEP", "CGT", "UCR", "ONU"],
-        correcta: "CONADEP"
+        pregunta: "El conflicto de La Tablada se caracterizó por:",
+        opciones: ["Una guerra internacional con Chile","Un levantamiento militar durante la dictadura","Un ataque armado a un cuartel en democracia","Una protesta estudiantil pacífica"],
+        correcta: "Un ataque armado a un cuartel en democracia"
     },
     {
-        pregunta: "¿Qué buscaba demostrar el Juicio a las Juntas",
+        pregunta: "¿Qué buscaba demostrar el Juicio a las Juntas?",
         opciones: ["Que los militares podían volver al poder", "Que los crímenes de la dictadura podían ser juzgados por la justicia democrática", "Que la democracia había fracasado", "Que las Fuerzas Armadas gobernarían nuevamente"],
-        correcta: "Nunca Más"
+        correcta: "Que los crímenes de la dictadura podían ser juzgados por la justicia democrática"
     },
     {
         pregunta: "¿Qué plan económico intentó frenar la inflación?",
@@ -40,9 +40,9 @@ export const preguntas = [
         correcta: "Plan Austral"
     },
     {
-        pregunta: "¿A quién entregó Alfonsín el mando presidencial en 1989?",
-        opciones: ["Carlos Menem", "Fernando de la Rúa", "Néstor Kirchner", "Eduardo Angeloz"],
-        correcta: "Carlos Menem"
+        pregunta: "La Ley de Obediencia Debida establecía que:",
+        opciones: ["Todos los militares debían ser juzgados sin excepción", "Solo los altos mandos eran responsables de los delitos cometidos","Los militares de menor rango quedaban eximidos de responsabilidad por obedecer órdenes","Se eliminaban todos los juicios por derechos humanos"],
+        correcta: "Los militares de menor rango quedaban eximidos de responsabilidad por obedecer órdenes"
     },
     {
         pregunta: "¿Cuál es una frase asociada a Alfonsín?",
