@@ -117,24 +117,21 @@ header h2{
     font-size: 1.2rem;
 }
 
-/* CONTENEDOR DEL CARRUSEL */
+
 .timeline-wrapper{
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     
-    margin-top: 60px;  /* 👈 separa del nav */
-
-    
+    margin-top: 60px; 
 }
 
-/* CARRUSEL */
 .timeline{
     display: flex;
     overflow: hidden;
 
-    width: 900px;   /* 👈 MUCHÍSIMO más ancho */
+    width: 900px; 
     max-width: 95vw;
 
     border-radius: 25px;
@@ -152,14 +149,14 @@ header h2{
     border: 3px solid #7bbbe6;
     border-radius: 25px;
 
-    overflow: hidden; /* 👈 CLAVE: mantiene todo unido */
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     transition: transform .35s ease, box-shadow .35s ease;
-    transform-origin: center; /* 👈 zoom desde el centro */
+    transform-origin: center;
 }
 
 .card:hover{
@@ -172,17 +169,17 @@ header h2{
         0 0 20px rgba(123,187,230,0.6);
 }
 
-/* IMAGEN */
+
 .card img{
-    width: 95%;      /* 👈 casi toda la card */
-    height: 380px;   /* 👈 GRANDE */
+    width: 95%;      
+    height: 380px;   
     object-fit: cover;
 
     margin-top: 20px;
     border-radius: 18px;
 }
 
-/* TEXTO */
+
 .card h2{
     
     font-family: "Girassol", serif;
@@ -202,7 +199,7 @@ header h2{
     color: #333;
 }
 
-/* BOTONES */
+
 .btn{
     position: absolute;
     top: 50%;
@@ -220,6 +217,6 @@ header h2{
     cursor: pointer;
 }
 
-/* flechas */
+
 .btn.left{ left: 20px; }
 .btn.right{ right: 20px; }

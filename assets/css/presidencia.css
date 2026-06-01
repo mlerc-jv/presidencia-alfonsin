@@ -1,15 +1,9 @@
-/* =========================
-   RESET GENERAL
-========================= */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* =========================
-   HEADER
-========================= */
 header{
     background: linear-gradient(180deg, #2d8ee8, #5aaef5, #2d8ee8);
     color: white;
@@ -37,7 +31,6 @@ header h2{
     font-size: 1.2rem;
 }
 
-/* decoracion */
 .decoracion{
     width: 95%;
     height: 3px;
@@ -45,9 +38,6 @@ header h2{
     background: white;
 }
 
-/* =========================
-   NAV
-========================= */
 nav{
     background: white;
     display: flex;
@@ -96,17 +86,11 @@ nav a:hover::before{
     left: 100%;
 }
 
-/* =========================
-   BODY (IMPORTANTE: SIN FLEX)
-========================= */
 body{
     
     color: #fff;
 }
 
-/* =========================
-   CONTAINER DE CARDS
-========================= */
 .container{
     
     display: flex;
@@ -114,14 +98,11 @@ body{
     justify-content: center;
     gap: 30px;
 
-    max-width: 1000px;   /* 👈 CLAVE */
+    max-width: 1000px; 
     
    margin: 60px auto 40px auto;
 }
 
-/* =========================
-   FOCUS CARDS
-========================= */
 .focus-card{
     position: relative;
     width: 720px;
@@ -143,7 +124,7 @@ body{
     transition: 0.4s ease;
 }
 
-/* contenido */
+
 .card-content{
     position: absolute;
     top: 50%;
@@ -174,10 +155,9 @@ body{
     font-family: "Oswald", sans-serif;
 }
 
-/* 🔵 TITULO PRINCIPAL (LABEL) */
 .card-label{
-    font-size: 2rem;      /* 👈 más grande */
-    font-weight: 800;     /* 👈 más grueso */
+    font-size: 2rem;      
+    font-weight: 800;   
     letter-spacing: 1px;
     text-transform: uppercase;
 
@@ -187,10 +167,10 @@ body{
     transition: 0.3s ease;
 }
 
-/* 🔷 SUBTITULO (INFO) */
+
 .card-subtitle{
-    font-size: 1.2rem;    /* 👈 ahora sí se lee fuerte */
-    font-weight: 500;     /* 👈 más grueso */
+    font-size: 1.2rem;  
+    font-weight: 500;     
     line-height: 1.4;
 
     opacity: 0;
@@ -202,7 +182,7 @@ body{
     transition: 0.4s ease;
 }
 
-/* hover individual */
+
 .focus-card:hover{
     transform: scale(1.12) translateY(-5px);
     box-shadow: 0 15px 50px rgba(0,0,0,0.6);
@@ -228,7 +208,7 @@ body{
     opacity: 1;
     transform: translateY(3px);
 }
-/* blur cuando pasas sobre el container */
+
 .container:hover .focus-card{
     filter: blur(3px) brightness(50%);
     transform: scale(0.95);
@@ -240,9 +220,7 @@ body{
     z-index: 10;
 }
 
-/* =========================
-   FOOTER
-========================= */
+
 footer{
     background-color: #1d4e89;
     color: white;
