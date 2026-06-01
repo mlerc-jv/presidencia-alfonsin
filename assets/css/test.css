@@ -1,0 +1,149 @@
+.contenedor-test{
+    padding: 45px 8%;
+    background: linear-gradient(180deg, #f2f8ff, #ffffff);
+}
+
+.hero-test{
+    background-color: white;
+    color: #1d4e89;
+    text-align: center;
+    padding: 45px 30px;
+    border-radius: 20px;
+    margin-bottom: 45px;
+    border: 3px dashed #74c9ff;
+    box-shadow: 0 5px 20px rgba(29,78,137,0.16);
+}
+
+.hero-test::before{
+    content: "¿Cuánto aprendiste?";
+    display: inline-block;
+    background-color: #3f9ae5;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.hero-test h2{
+    font-family: "Georgia", serif;
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+}
+
+.hero-test p{
+    max-width: 760px;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #2c3e50;
+}
+
+.caja-test{
+    max-width: 850px;
+    margin: auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(29,78,137,0.18);
+    border-left: 8px solid #3f9ae5;
+}
+
+#contador-pregunta{
+    color: #3f9ae5;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#pregunta{
+    color: #1d4e89;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+}
+
+.opciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.opcion{
+    background-color: #f2f8ff;
+    color: #1d4e89;
+    border: 2px solid #74c9ff;
+    padding: 16px;
+    border-radius: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.opcion:hover{
+    background-color: #dff1ff;
+    transform: translateY(-4px);
+}
+
+.opcion.seleccionada{
+    background-color: #3f9ae5;
+    color: white;
+    border-color: #1d4e89;
+}
+
+.btn-test{
+    background-color: #1d4e89;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-test:hover{
+    background-color: #3f9ae5;
+    transform: scale(1.05);
+}
+
+.advertencia{
+    color: #c62828;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.resultado{
+    margin-top: 25px;
+}
+
+.resultado-final{
+    text-align: center;
+}
+
+.resultado-final h3{
+    color: #1d4e89;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.resultado-final p{
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+@media(max-width: 768px){
+    .opciones{
+        grid-template-columns: 1fr;
+    }
+
+    .hero-test h2{
+        font-size: 2.1rem;
+    }
+
+    .caja-test{
+        padding: 25px;
+    }
+}

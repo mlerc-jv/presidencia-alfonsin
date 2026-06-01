@@ -1,0 +1,205 @@
+.contenedor-problemas{
+    padding: 45px 8%;
+    background: linear-gradient(180deg, #f2f8ff, #ffffff);
+}
+
+.hero-problemas{
+    background: linear-gradient(rgba(29,78,137,0.85), rgba(45,142,232,0.78)), url("../img/presidente.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 75px 30px;
+    border-radius: 18px;
+    margin-bottom: 45px;
+    box-shadow: 0 8px 25px rgba(29,78,137,0.25);
+}
+
+.hero-problemas h2{
+    font-family: "Georgia", serif;
+    font-size: 2.7rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,.25);
+}
+
+.hero-problemas p{
+    max-width: 850px;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.acordeon-problemas{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.problema-item{
+    background-color: white;
+    border-radius: 18px;
+    border-left: 8px solid #3f9ae5;
+    box-shadow: 0 5px 18px rgba(29,78,137,0.18);
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.problema-item:hover{
+    transform: translateX(6px);
+    box-shadow: 0 8px 24px rgba(29,78,137,0.25);
+}
+
+.problema-item summary{
+    cursor: pointer;
+    list-style: none;
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #1d4e89;
+}
+
+.problema-item summary::-webkit-details-marker{
+    display: none;
+}
+
+.problema-item summary::after{
+    content: "+";
+    margin-left: auto;
+    font-size: 2rem;
+    color: #3f9ae5;
+    font-weight: bold;
+}
+
+.problema-item[open] summary::after{
+    content: "−";
+}
+
+.problema-item summary h3{
+    margin: 0;
+    font-size: 1.45rem;
+    color: #1d4e89;
+}
+
+.problema-item summary p{
+    margin-top: 7px;
+    font-size: 0.98rem;
+    color: #4f6f8f;
+    font-weight: normal;
+}
+
+.contenido-problema{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 28px;
+    padding: 0 30px 32px;
+    align-items: center;
+}
+
+.texto-problema p{
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 14px;
+    color: #26384d;
+}
+
+.contenido-problema figure{
+    margin: 0;
+}
+
+.contenido-problema img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    transition: .3s ease;
+}
+
+.contenido-problema img:hover{
+    transform: scale(1.03);
+}
+
+.contenido-problema figcaption{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #52677d;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.timeline-problemas{
+    margin-top: 65px;
+    text-align: center;
+}
+
+.timeline-problemas h2{
+    color: #1d4e89;
+    font-size: 2.2rem;
+    margin-bottom: 35px;
+    font-family: "Georgia", serif;
+}
+
+.timeline{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.timeline-item{
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 18px;
+    border-top: 7px solid #3f9ae5;
+    box-shadow: 0 5px 18px rgba(29,78,137,0.18);
+    transition: 0.3s;
+}
+
+.timeline-item:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(29,78,137,0.25);
+}
+
+.timeline-item span{
+    color: #3f9ae5;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+.timeline-item h3{
+    color: #1d4e89;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+}
+
+.timeline-item p{
+    margin-top: 12px;
+    line-height: 1.5;
+    color: #26384d;
+}
+
+@media(max-width: 768px){
+    .contenedor-problemas{
+        padding: 30px 5%;
+    }
+
+    .hero-problemas h2{
+        font-size: 2rem;
+    }
+
+    .contenido-problema{
+        grid-template-columns: 1fr;
+    }
+
+    .problema-item summary h3{
+        font-size: 1.2rem;
+    }
+
+    .problema-item summary p{
+        font-size: 0.9rem;
+    }
+}

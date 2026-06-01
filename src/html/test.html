@@ -5,12 +5,29 @@
     <meta http-equiv= "X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRESIDENTE ALFONSIN</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../../assets/css/index.css">
+    <link rel="stylesheet" href="../../assets/css/test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <h1>PRESIDENTE RAUL ALFONSIN</h1>
+
+    <div class="decoracion"></div>
+
+    <h1>RAÚL ALFONSÍN</h1>
+
+    <h2>Presidente de la Nación Argentina (1983-1989)</h2>
+
+    <p class="descripcion">
+        Raúl Alfonsín fue un abogado y político argentino que ejerció
+        la presidencia entre 1983 y 1989. Es reconocido por haber
+        liderado la transición democrática tras la última dictadura
+        militar.
+    </p>
+
+    <div class="decoracion"></div>
+
 </header>
 
 <nav>
@@ -24,8 +41,24 @@
 </nav>
 
 
-<main>
+<main class="contenedor-test">
 
+    <section class="hero-test">
+        <h2>Test sobre Raúl Alfonsín</h2>
+        <p>¿Prestaste atención durante el recorrido? Demostrá cuánto aprendiste respondiendo estas preguntas.</p>
+    </section>
+
+    <section class="caja-test">
+        <p id="contador-pregunta"></p>
+
+        <h3 id="pregunta"></h3>
+
+        <div id="opciones" class="opciones"></div>
+
+        <button id="btn-siguiente" class="btn-test">Siguiente</button>
+
+        <div id="resultado" class="resultado"></div>
+    </section>
 
 </main>
 
@@ -34,6 +67,8 @@
     <p>Análisis de la Realidad Sociohistórica Contemporánea</p>
     <p>CARRILLO ABRIL | MAIDANA ANTONELLA | MERUVIA JIMENA</p>
 </footer>
+
+<script type="module" src="../js/test.js"></script>
 
 </body>
 </html>
